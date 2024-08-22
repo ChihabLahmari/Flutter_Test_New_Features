@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:testing_new_things/version_3_24/main.dart';
+import 'package:testing_new_things/app_life_cycle/app_life_cycle_display.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -16,8 +16,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Version3e24(),
-    );
+        // showPerformanceOverlay: true,
+        debugShowCheckedModeBanner: false,
+        home: AppLifecycleDisplay());
   }
 }
