@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:testing_new_things/animation/animations.dart';
+import 'package:testing_new_things/isolates/isolates_with_spawn_example.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       // showPerformanceOverlay: true,
       debugShowCheckedModeBanner: false,
-      home: AnimationView(),
+      home: IsolatesWithSpawnExample(),
     );
   }
 }
