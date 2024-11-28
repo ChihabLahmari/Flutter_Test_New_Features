@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:testing_new_things/isolates/isolates_with_spawn_example.dart';
+import 'package:testing_new_things/logger/logger_test.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -18,7 +19,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       // showPerformanceOverlay: true,
       debugShowCheckedModeBanner: false,
-      home: IsolatesWithSpawnExample(),
+      home: LoggerTest(),
     );
   }
 }
